@@ -53,6 +53,7 @@ The target variable is:
 Churn
 0 = No Churn
 1 = Churn 
+---
 
 ## 🔎 Exploratory Data Analysis
 
@@ -91,7 +92,7 @@ Electronic check customers showed the highest churn rate among the payment metho
 
 ### Other Observations
 
-### Additional analysis showed:
+Additional analysis showed:
 
 Newer customers generally had higher churn.
 Customers with online security had lower observed churn than customers without it.
@@ -146,13 +147,15 @@ The final model selected for the project is:
 
 Balanced Logistic Regression
 
-## Final Performance
-Metric	Score
-Accuracy	74.02%
-Precision	50.69%
-Recall	78.61%
-F1 Score	61.64%
-ROC-AUC	84.14%
+### Final Performance
+
+| Metric | Score |
+|---|---:|
+| Accuracy | 74.02% |
+| Precision | 50.69% |
+| Recall | 78.61% |
+| F1 Score | 61.64% |
+| ROC-AUC | 84.14% |
 ## Why Balanced Logistic Regression?
 
 The main goal of this project is to identify customers who may churn.
@@ -169,6 +172,7 @@ The ROC-AUC of 84.14% indicates good overall discrimination between churn and no
 
 Using the selected threshold of 0.5:
 
+```text
                     Predicted
                   No Churn   Churn
 
@@ -204,8 +208,6 @@ The trained model has been deployed using Streamlit.
 
 ![Customer Churn Prediction App](streamlit_app.png)
 
-The trained model has been deployed using Streamlit.
-
 The application allows users to enter customer information such as:
 
 Demographics
@@ -223,10 +225,13 @@ The application returns:
 Churn probability
 Risk category
 Churn / No Churn prediction
-## Risk Categories
-Probability < 30%  → Low Risk
-30%–60%             → Medium Risk
-Probability ≥ 60%  → High Risk
+### Risk Categories
+
+| Churn Probability | Risk |
+|---|---|
+| < 30% | Low Risk |
+| 30%–60% | Medium Risk |
+| ≥ 60% | High Risk |
 
 These risk categories are presentation thresholds used by this project and are not statistically validated business thresholds.
 
@@ -257,7 +262,8 @@ customer_churn_prediction/
 └── .gitignore
 ▶️ How to Run the Project
 1. Clone the repository
-git clone <YOUR-GITHUB-REPOSITORY-URL>
+git clone https://github.com/kashish77-gif/customer-churn-prediction.git
+cd customer-churn-prediction
 2. Navigate to the project folder
 cd customer_churn_prediction
 3. Install dependencies
@@ -280,7 +286,7 @@ Automated retention recommendations
 Cloud deployment
 Monitoring model performance after deployment
 ## 👩‍💻 Author
-Kashish
+Kashish Vashishta
 
 Computer Science Engineering Student
 
@@ -290,7 +296,7 @@ Data Science
 Machine Learning
 Artificial Intelligence
 Data Analytics
-⭐ Project Highlight
+## ⭐ Project Highlight
 
 This project demonstrates an end-to-end machine learning workflow:
 
