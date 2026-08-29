@@ -207,6 +207,7 @@ The trained model has been deployed using Streamlit.
 ### 📸 Application Preview
 
 ![Customer Churn Prediction App](streamlit_app.png)
+🚀 **Live Demo:** [Customer Churn Prediction App](https://customer-churn-prediction-h3qdjzdn4cmgpql7hgwgrg.streamlit.app/)
 
 The application allows users to enter customer information such as:
 
